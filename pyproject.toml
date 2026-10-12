@@ -1,0 +1,23 @@
+[project]
+name = "aisprobe"
+version = "0.1.0"
+description = "AISStream coverage probe for the Strait of Hormuz and Bab el-Mandeb"
+requires-python = ">=3.11"
+dependencies = ["websockets>=14"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["aisprobe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100

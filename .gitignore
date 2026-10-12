@@ -1,0 +1,13 @@
+# Generated AIS datasets and probe output
+data/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Local secrets
+.env
